@@ -10,9 +10,9 @@ export default function Header() {
                     <div className="hover:text-slate-500 cursor-pointer">Projects</div>
                     <div className="hover:text-slate-500 cursor-pointer">Experiences</div>
                 </div>
-                <div className="p-4">
-                    <button className="bg-slate-300 text-black font-bold p-4 rounded-xl w-32">DE</button>
-                </div>
+                {/*<div className="p-4">*/}
+                {/*    <button className="bg-slate-300 text-black font-bold p-4 rounded-xl w-32">DE</button>*/}
+                {/*</div>*/}
             </div>
         </>
     );

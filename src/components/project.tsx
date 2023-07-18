@@ -20,15 +20,15 @@ export default function Project() {
         <>
             <div className={`min-h-screen ${museoModerno.className}`}>
                 <div className="text-[64px] md:text-[96px] mb-8 md:mb-32 flex justify-center md:justify-start">Projects</div>
-                <div className="flex flex-row space-x-32 w-full h-full overflow-x-hidden">
+                <div className="flex flex-col md:flex-row space-x-0 space-y-4 md:space-y-0 md:space-x-32 w-full h-full overflow-x-auto">
                     {
                         projects.map((item, index) => (
-                            <div className="flex-none cursor-pointer" key={index}>
+                            <div className="flex flex-col md:flex-none cursor-pointer" key={index}>
                                 <Image src={item.image}
                                        alt={item.alt}
                                        width={0}
                                        height={0}
-                                       className="border p-8 rounded-xl w-[20rem] h-[24rem] md:w-[32rem] md:h-[32rem]"
+                                       className="border p-8 rounded-xl w-full h-[24rem] md:w-[32rem] md:h-[32rem]"
                                 ></Image>
 
                                 <div className="flex justify-between">
@@ -36,7 +36,7 @@ export default function Project() {
                                         {item.title}
                                     </div>
                                     <div
-                                        className="bg-black text-xl text-white rounded-lg p-4 h-16 w-16 flex justify-center items-center translate-x-4 -translate-y-8"
+                                        className="bg-black text-xl text-white rounded-lg p-4 h-16 w-16 flex justify-center items-center translate-x-0 md:translate-x-4 -translate-y-8"
                                     >
                                         {index + 1}
                                     </div>
