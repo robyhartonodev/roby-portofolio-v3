@@ -15,10 +15,10 @@ export default function AboutMe() {
 
     return (
         <>
-            <div className={`min-h-screen flex justify-between items-center ${museoModerno.className}`}>
-                <div className="w-1/3">
-                    <div className="text-[96px] mb-8">My name is <span className="font-bold">Roby</span></div>
-                    <div className="text-[24px] mb-36">I am software developer focused on crafting great experiences
+            <div className={`min-h-screen flex flex-col md:flex-row justify-between items-center ${museoModerno.className}`}>
+                <div className="w-full md:w-1/3 order-last md:order-first">
+                    <div className="text-[64px] md:text-[96px] mb-4 md:mb-8">My name is <span className="font-bold">Roby</span></div>
+                    <div className="text-[18px] md:text-[24px] mb-8 md:mb-36">I am software developer focused on crafting great experiences
                     </div>
                     <div className="flex flex-row gap-3 flex-wrap">
                         {
@@ -30,13 +30,12 @@ export default function AboutMe() {
                         }
                     </div>
                 </div>
-                <div className="-z-10 w-2/3">
+                <div className="-z-10 hidden md:flex md:w-2/3 order-first md:order-last">
                     <Image src="/me.svg"
                            alt="me"
                            width={0}
                            height={0}
-                           sizes="100vw"
-                           className="scale-x-[-1] -translate-y-60 md:-translate-y-96 translate-x-96 w-full h-auto"
+                           className="scale-x-[-1] -translate-y-96 translate-x-0 md:-translate-y-96 md:translate-x-96 w-full h-auto"
                     >
                     </Image>
                 </div>
