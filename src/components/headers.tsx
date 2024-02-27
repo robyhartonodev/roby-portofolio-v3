@@ -1,19 +1,22 @@
 "use client";
 
 import Image from 'next/image';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+    const [theme, setTheme] = useState("light");
 
     useEffect(() => {
-        console.log("initialized");
+        setLocalStorageTheme();
     }, []);
 
     const setLocalStorageTheme = () => {
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
+            setTheme("dark");
         } else {
             document.documentElement.classList.remove('dark');
+            setTheme("light");
         }
 
     };
@@ -62,7 +65,7 @@ export default function Header() {
                 className="flex md:hidden flex-row items-center justify-between sticky top-0 p-4 bg-white dark:bg-midnight shadow-sm z-10 opacity-95">
                 <Image src="/logo.svg" alt="logo" width="36" height="36"></Image>
                 <div>
-                    {localStorage.theme === "light" ? darkButton() : lightButton()}
+                    {theme === "light" ? darkButton() : lightButton()}
                 </div>
             </div>
 
@@ -79,7 +82,7 @@ export default function Header() {
                         <div className="hover:text-slate-500 cursor-pointer">Experiences</div>
                     </div>
                     <div>
-                        {localStorage.theme === "light" ? darkButton() : lightButton()}
+                        {theme === "light" ? darkButton() : lightButton()}
                     </div>
                 </div>
             </div>
