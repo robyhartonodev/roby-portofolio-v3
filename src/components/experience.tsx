@@ -1,5 +1,4 @@
 import { MuseoModerno } from 'next/font/google';
-import Image from 'next/image';
 
 const museoModerno = MuseoModerno({weight: "500", subsets: ["latin"]});
 
@@ -15,7 +14,7 @@ export default function Experience() {
         <>
             <div className={`min-h-screen ${museoModerno.className}`}>
                 <div
-                    className="text-[64px] md:text-[96px] mb-8 md:mb-32 flex justify-center md:justify-start">⭐ Experiences
+                    className="text-[48px] md:text-[96px] mb-8 md:mb-32 flex justify-center md:justify-start">⭐ Experiences
                 </div>
 
                 <div className="space-y-8 md:space-y-24">
