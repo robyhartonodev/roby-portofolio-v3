@@ -15,7 +15,7 @@ export default function AboutMe() {
 
     return (
         <>
-            <div className={`min-h-screen flex flex-col md:flex-row justify-between items-center ${museoModerno.className}`}>
+            <div className={`min-h-screen flex flex-col md:flex-row justify-between items-center ${museoModerno.className}`} id="about-me">
                 <div className="w-full order-last md:order-first">
                     <div className="text-[64px] md:text-[96px] mb-4 md:mb-8">🚀 My name is <span className="font-bold">Roby</span></div>
                     <div className="text-[18px] md:text-[24px] mb-8 md:mb-36">I am software developer focused on crafting great experiences

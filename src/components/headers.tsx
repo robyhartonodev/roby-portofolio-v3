@@ -58,6 +58,16 @@ export default function Header() {
         </div>
     );
 
+    const scrollToTarget = (id: string) => {
+        const targetElement = document.getElementById(id);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    };
+
     return (
         <>
             {/* Small breakpoint */}
@@ -77,9 +87,30 @@ export default function Header() {
                         className="flex flex-row justify-start items-center space-y-4 md:space-y-0 space-x-0 md:space-x-8"
                     >
                         <Image src="/logo.svg" alt="logo" width="72" height="72"></Image>
-                        <div className="hover:text-slate-500 cursor-pointer">About Me</div>
-                        <div className="hover:text-slate-500 cursor-pointer">Projects</div>
-                        <div className="hover:text-slate-500 cursor-pointer">Experiences</div>
+                        <div
+                            className="hover:text-slate-500 cursor-pointer"
+                            onClick={() => {
+                                scrollToTarget("about-me");
+                            }}
+                        >
+                            About Me
+                        </div>
+                        <div
+                            className="hover:text-slate-500 cursor-pointer"
+                            onClick={() => {
+                                scrollToTarget("my-project");
+                            }}
+                        >
+                            Projects
+                        </div>
+                        <div
+                            className="hover:text-slate-500 cursor-pointer"
+                            onClick={() => {
+                                scrollToTarget("my-experience");
+                            }}
+                        >
+                            Experiences
+                        </div>
                     </div>
                     <div>
                         {theme === "light" ? darkButton() : lightButton()}

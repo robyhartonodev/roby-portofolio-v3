@@ -4,15 +4,15 @@ const museoModerno = MuseoModerno({weight: "500", subsets: ["latin"]});
 
 export default function Experience() {
     const experiences = [
-        {time: "04.2023 - Now", title: "Empulse - Fullstack developer"},
-        {time: "04.2020 - 03.2023", title: "THM Gießen - Digital Medicine (M.Sc.)"},
-        {time: "04.2019 - 03.2023", title: "BDH Klinik Braunfels - Working student as Fullstack developer"},
-        {time: "2016 - 2020", title: "THM Gießen - Medical Informatics (B.Sc.)"},
+        {time: "04.2023 - Now", title: "💼 Empulse - Fullstack developer"},
+        {time: "04.2020 - 03.2023", title: "🏫 THM Gießen - Digital Medicine (M.Sc.)"},
+        {time: "04.2019 - 03.2023", title: "💼 BDH Klinik Braunfels - Working student as Fullstack developer"},
+        {time: "2016 - 2020", title: "🏫 THM Gießen - Medical Informatics (B.Sc.)"},
     ];
 
     return (
         <>
-            <div className={`min-h-screen ${museoModerno.className}`}>
+            <div className={`min-h-screen ${museoModerno.className}`} id="my-experience">
                 <div
                     className="text-[48px] md:text-[96px] mb-8 md:mb-32 flex justify-center md:justify-start">⭐ Experiences
                 </div>

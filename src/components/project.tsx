@@ -71,7 +71,7 @@ export default function Project() {
 
     return (
         <>
-            <div className={`min-h-screen ${museoModerno.className}`}>
+            <div className={`min-h-screen ${museoModerno.className}`} id="my-project">
                 <div className="text-[64px] md:text-[96px] mb-8 md:mb-32 flex justify-center md:justify-start">🚧
                     Projects
                 </div>
