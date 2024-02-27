@@ -9,17 +9,12 @@ export default function Project() {
         {image: "/pilos.svg", alt: "help2", title: "Pilos 2"},
         {image: "/pilos.svg", alt: "help3", title: "Pilos 3"},
         {image: "/pilos.svg", alt: "help4", title: "Pilos 4"},
-        {image: "/pilos.svg", alt: "help5", title: "Pilos"},
-        {image: "/pilos.svg", alt: "help6", title: "Pilos"},
-        {image: "/pilos.svg", alt: "help4", title: "Pilos"},
-        {image: "/pilos.svg", alt: "help5", title: "Pilos"},
-        {image: "/pilos.svg", alt: "help6", title: "Pilos"},
     ];
 
     return (
         <>
             <div className={`min-h-screen ${museoModerno.className}`}>
-                <div className="text-[64px] md:text-[96px] mb-8 md:mb-32 flex justify-center md:justify-start">Projects</div>
+                <div className="text-[64px] md:text-[96px] mb-8 md:mb-32 flex justify-center md:justify-start">🚧 Projects</div>
                 <div className="flex flex-col md:flex-row space-x-0 space-y-4 md:space-y-0 md:space-x-32 w-full h-full overflow-x-auto">
                     {
                         projects.map((item, index) => (

@@ -15,17 +15,12 @@ export default function Experience() {
         <>
             <div className={`min-h-screen ${museoModerno.className}`}>
                 <div
-                    className="text-[64px] md:text-[96px] mb-8 md:mb-32 flex justify-center md:justify-start">Experiences
+                    className="text-[64px] md:text-[96px] mb-8 md:mb-32 flex justify-center md:justify-start">⭐ Experiences
                 </div>
 
                 <div className="space-y-8 md:space-y-24">
                     {experiences.map((item, index) => (
                         <div className="flex space-x-16" key={index}>
-                            <div className="relative">
-                                <div className="rounded-full h-16 w-16 bg-indigo-600">
-                                </div>
-                                <div className="w-2 h-64 absolute top-0 left-7 bg-indigo-600"></div>
-                            </div>
                             <div className="space-y-2 md:space-y-8">
                                 <div className="text-[28px] md:text-[48px] font-bold">{item.time}</div>
                                 <div className="text-[20px] md:text-[24px]">{item.title}</div>
